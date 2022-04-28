@@ -1,0 +1,14 @@
+#!/bin/bash
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+WD=$(pwd)
+
+inputFile=${1}
+
+if [[ "${inputFile}" == "" ]]; then
+  echo "Usage: alphabetize_md <processFile>"
+fi
+
+contents=$(node "${SCRIPT_DIR}/alphabetize_md.js" "${inputFile}")
+
+echo "${contents}">"${inputFile}"

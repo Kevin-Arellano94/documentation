@@ -1,0 +1,10 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "eHawk Solutions",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
