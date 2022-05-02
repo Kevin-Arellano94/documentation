@@ -1,7 +1,6 @@
 import glob
 
-# my_path = "C:/Users/kevin/Documents/GitHub/eHawk-Inc"
-my_path = "D:/a/documentation-action/documentation-action"
+my_path = r"D:\a\documentation-action\documentation-action"
 
 files = glob.glob(
     my_path +
@@ -9,7 +8,10 @@ files = glob.glob(
     recursive = True
 )
 
-print(f'{ files }')
+for items in files:
+    print(items)
+
+
 print(f'completed...')
 
 exit(0)
