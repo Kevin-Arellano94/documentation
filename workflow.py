@@ -1,11 +1,7 @@
-import os
 import glob
 
-
-hw = "Hello World!"
-print(hw)
-
-my_path = "/Users/kevin/Documents/GitHub/eHawk-Inc"
+# my_path = "C:/Users/kevin/Documents/GitHub/eHawk-Inc"
+my_path = "D:/a/documentation-action/documentation-action"
 
 files = glob.glob(
     my_path +
