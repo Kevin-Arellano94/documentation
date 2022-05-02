@@ -1,4 +1,4 @@
-PROD = True
+PROD = False
 
 import glob
 
@@ -9,7 +9,7 @@ branch  = r'/main'
 
 if (PROD):
     path = r"D:/a/documentation-action/documentation-action"
-else:
+if (not PROD):
     path = r"C:/Users/kevin/Documents/GitHub/eHawk-Inc/documentation"
 
 files = glob.glob(
@@ -23,7 +23,10 @@ for items in files:
 
     raw_url = new_items.replace(
         f'{ path }',
-        domain + user + repo + branch
+        domain +
+        user +
+        repo +
+        branch
     )
 
     print(raw_url)
