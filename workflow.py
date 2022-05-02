@@ -11,7 +11,7 @@ branch = r'/main'
 
 # Paths
 my_path = r"C:/Users/kevin/Documents/GitHub/eHawk-Inc"
-my_github_path = r"D:\a\documentation-action\documentation-action"
+my_github_path = r"D:/a/documentation-action/documentation-action"
 
 # Gets all the MarkDown files
 files = glob.glob(
