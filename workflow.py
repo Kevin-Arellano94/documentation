@@ -1,4 +1,4 @@
-PROD = False
+PROD = True
 
 import glob
 
